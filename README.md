@@ -2,42 +2,35 @@
 
 ---
 ## <3주차 스터디>
-
-IDE 설치 및 웹
+- IDE 설치 및 웹
 
 ---
 ## <4주차 스터디>
-
-HTML 
+- HTML 
 
 ---
 ## <5주차 스터디>
-
-CSS
+- CSS
 
 ---
 ## <6주차 스터디>
-
-JavaScript - 1
+- JavaScript - 1
 
 ---
 ## 중간고사로 스터디 휴식
 
 ---
 ## <9주차 스터디>
-
-JavaScript - 2
+- JavaScript - 2
 
 ---
 ## <10주차 스터디>
-
-JavaScript - 3
+- JavaScript - 3
 
 ---
 ## <11주차 스터디>
-
-DB와 SQL
+- DB와 SQL
 
 ---
 ## <12주차 스터디>
-2022 COMP 11주차 스터디까지 업로드:eyes:
+- 2022 COMP 11주차 스터디까지 업로드:eyes:
