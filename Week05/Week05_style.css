@@ -1,0 +1,77 @@
+/*내부 스타일 시트 head -> <style> </style>*/
+/*외부 스타일시트 head -> <link href="Week05_style.css" rel="stylesheet">*/
+/*인라인 스타일 - 태그에 style 속성 ex)<p style="color:green;"></p>*/
+
+/*  
+    선택자(p, div){속성:속성값;}   중괄호 안이 선언부
+    *{속성:속성값;} -> 전체 선택자에 적용
+    - 아이디 선택자 
+    <div id="name"> </div>
+        -> #name{}    
+    - 클래스 선택자
+     <div class="name"> </div>
+        -> .name{}
+    - 자식 선택자
+    element > element   ex) div.div_box > div : div_box 클래스의 div 아래의 div 
+    - 자손 선택자
+    element element     ex) div p : div에 내부 p 모든 태그
+    - 인접 선택자
+    element + element   ex) 원소 div+p : 원소 내의 div 다음에 있는 p
+    - 일반 선택자
+    element ~ element   ex) div ~ p : div 다음의 모든 p
+    - 속성 선택자
+        1. element[attr="value"] {}     
+        2. element[attr^="value"] {}    : value로 시작하는 속성값을 가지고 있는 태그에 사용
+        3. element[attr$="value"] {}    : value로 끝나는 속성값
+        4. element[attr*="value"] {}    : value를 포함하는 속성값
+    - 구조적 가상요소 선택자
+        1. first-child  : 첫번째 요소
+        2. last-child   : 마지막 요소
+        3. nth-chile(n)
+
+    선택자 공부 게임
+        https://flukeout.github.io/
+*/
+
+/* 
+
+color: 색상 키워드, rgb(R,G,B), rgba(R,G,B,A)(A:0~1(불투명)), #RRGGBB(#00 00 ff는 #00f로 표현 가능) HEX값 이용
+폰트 크기 단위(font-size): px(기본), 
+rem(html 태그 font-size의 배수), em(부모 태그 font-size의 배수), 
+vw(웹브라우저 화면 가로 크기의 1/100 기준), 
+vh(웹브라우저 화면 세로 크기의 1/100 기준) 
+
+font-family: [글꼴], [글꼴유형];
+글꼴유형: serif, sans-serif, cursive, fantasy, monospace
+ex) font-size:32px; font-family: 'Times New Roman', Times, serif; 
+'폰트', 없을때 우선순위, 글꼴 유형
+
+font-weight: 굵기 단위 (100~900), normal, bold, bolder, lighter
+line-height: 글자의 줄높이 (크기 단위 or 배수) 
+    글자 크기와 함께 커져서 폰트 사이즈보다 크게 설정해야 잘 보임
+
+보통 
+- 선택자{속성:속성값;} 은 header, nav, section, article, aside, footer에 사용
+- *{속성:속성값;}는 margin, padding 값 설정시에 사용
+
+!!! reset css !!! 구글 검색해서 복붙 사용 가능
+
+*/
+
+/*  Flexbox !
+
+float - 이미지, 텍스트 배치 (left, center, right)
+1. container, 각 item에 적용하는 속성값들이 있음
+2. 중심축(main axis), 반대축(cross axis) 이미지 배치 방향으로 구분
+
+
+
+
+
+
+
+    Flexbox 공부 게임
+        https://flexboxfroggy.com/#ko
+*/
+
+p{color: red;}      

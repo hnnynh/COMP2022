@@ -1,0 +1,52 @@
+-- 데이터베이스: 일정한 체계 속에 저장된 데이터 집합
+ - 데이터: Table(표) 단위로 저장    (Table: 데이터 저장 리스트 (ROW, COL, FIELD))
+     데이터 -> 데이터베이스에 저장
+
+- DBMS 프로그램 (DataBase Management System)
+사용자 명령 -> 설계된 방법으로 DB 생성 / DB에 테이블 생성 / 테이블에 데이터 생성, 삭제 / 테이블 조회
+ex) MySQL, ORACLE, SQL서버, MariaDB, SQLite     각자 특성이 다름
+모든 DBMS는 SQL 언어로 명령 (Structured Query Language)
+
+ex 1)   SELECT email FROM students;     // Student 테이블 유저의 모든 이메일 가져오기
+ex 2)   SELECT email FROM students WHERE age > 21;  // 나이가 21보다 많은 유저 가져오기
+ex 3)   SELECT email FROM students WHERE age BETWEEN 15 AND 18      // 나이가 15~18인 유저 가져오기
+ex 4)   SELECT age FROM students WHERE email LIKE "%naver.com";     // 이메일이 naver인 경우의 나이 가져오기
+ex 5)   DELETE FROM students WHERE id=2;    // id가 2인 유저 삭제 
+
+- ORM: 파이썬 -> SQL코드 (장고 ORM, eloquent ORM, Sequelize/type ORM)
+
+-- SQL: DB에서 사용하는 명령어
+    1. 데이터 정의어(DDL) : DB 생성, 테이블 생성
+    2. 데이터 조작어(DML) : 데이터 조회, 수정, 삭제
+    3. 데이터 제어어(DCL) : 사용자 권한 설정
+
+- 검색 SELECT: 테이블에서 데이터 검색 명령어 (SELECT col, umn FROM table);
+                + *는 모든 데이터를 의미
+- 조건 WHERE: FROM 테이블 뒤에 비교 연산자와 함께 조건문 (WHERE author = 'Joanne Kathleen Rowling')
+
+- 비교 연산자   (N_10 / N) 
+ >  , <   | 초과/미만
+ >= , <=  | 이상/이하
+    =     | N에 해당하는 값
+   !=     | N이 아닌 값
+
+- 복합 조건 연산자  (A_B / A)
+ AND , && | A, B를 모두 만족
+ OR  , || | A 또는 B인 값
+ NOT , !  | A가 아닌 값
+
+- 기타 연산자   (N_M)
+ BETWEEN  | N과 M 사이에 포함된 값
+    IN    | M에 N이 포함된 값
+  NOT IN  | M에 N이 포함되지 않은 값
+
+-- SQL 주석은 --입력 후 한 칸을 띄우고 입력  /**/도 가능
+
+- 데이터 종류
+    int   | 정수 자료형 -2147483648 ~ 2144483647
+   float  | 실수 자료형
+    char  | 문자열 자료형 (char(nn) = 'abc...' nn길이 문자열)
+  varchar | 문자열 자료형 (정해진 글자보다 짧아도 공백 추가X)
+    date  | 년월일 저장 날짜 자료형 ('yyyy-MM-dd') '1001-01-01'~ '9999-12-31'
+ datetime | 년월일시분초 날짜, 시각 자료형 ('yyyy-MM-dd HH:mm:ss') '1001-01-01 00:00:00'~ '9999-12-31 23:59:59'
+    time  | 시간 자료형 (HH:mm:ss') -838:59:59' ~ '838:59:59

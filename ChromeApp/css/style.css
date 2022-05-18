@@ -1,0 +1,78 @@
+body {
+    background-image: url("https://c.wallhere.com/photos/c1/0c/Pixar_Animation_Studios_Disney_minimalism-1364365.jpg!d");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#clock{
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 50px;
+}
+
+form{
+    size: 10vh;
+    text-align: center;
+}
+
+#greeting{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+#quote{
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#weather{
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    right: 35%;
+}   
+
+input {
+    width: 250px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid black;
+}
+
+li {
+    color: white;
+    list-style: none;
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+    font-size: 16px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.2);
+    float: right;
+    border:0;
+    outline:0;
+    border-radius: 0.2em;
+}

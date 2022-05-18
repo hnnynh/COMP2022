@@ -1,0 +1,81 @@
+<!DOCTYPE html>     <!-- html5 DOCTYPE -->
+<html lang="en">    <!-- html 문서 시작 + html 문서의 언어 정보 -->
+    <head>          <!-- html 문서 정보 -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week04 html + 태그</title>
+    </head>
+    <body>          <!-- 웹 브라우저에 표시되는 코드 -->
+        <div>시작태그 / 내용 / 종료태그 -> 전체가 요소</div>
+        <!-- <br> <img> <meta> 종료 태그가 없는 [빈 태그] -->
+        <br>
+
+        <!-- <h(n)태그 = <h1>, <h2> ... 대제목, 중제목, 소제목 등 (숫자가 작을수록 중요) -->
+        <h1>h1 tag</h1>     <!-- h1 태그는 html 문서에서 한번만 사용 -> 검색엔진 최적화 도움 -->
+        <h2>h2 tag</h2>     <!-- h1 태그부터 순차적으로 사용해야함 -->
+        <h3>h3 tag</h3>
+        <h4>h4 tag</h4>
+        <h5>h5 tag</h5>
+        <h6>h6 tag</h6>
+        <br>
+
+        <p>단락 구분 1 - 가로 한 줄을 사용하는 태그</p>
+        <p>단락 구분 2 - 공백은 웹브라우저에서 최대 한        칸
+            &nbsp;    여러 칸으로 늘리기<br>줄 바꿈 태그</p>
+        <br>
+
+        <a href="#one">one 내부 태그로 이동</a>
+        <a href="#two">two 내부 태그로 이동</a>
+        <a href="https://www.google.com">GOOGLE</a>
+        <a href="https://www.naver.com/" target="_blank">NAVER 새 탭으로 열기</a>
+        <br>속성 = 태그 기능을 보완하는 속성 &nbsp;  ex) a태그의 href, target 등..
+        <br>
+
+        <p>파일 경로는 문서 실행 위치가 기준<br>./ -> 현재 폴더(생략 가능) ../ -> 상위폴더 ../../ -> 상위 폴더의 상위 폴더</p>
+        <img src="./data/img.png" alt="대체 텍스트 alt 속성 (이미지가 깨졌을 때 설명)" width="10%">
+        width, height는 px단위 또는 %단위로 조절
+        <br>
+        <a href="https://www.google.com" target="_blank"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="외부 이미지 (구글 로고)"></a>
+        
+        <!-- 적절한 태그를 사용하자 ! (html 문서의 가치가 떨어지고 파악이 어려움) -->
+        
+        <p><strong>경고</strong>: 이 놀이기구는 <em>임산부, 노약자, 어린이</em>는 탑승할 수 없습니다. </p>
+        <p><b>경고</b>: 이 놀이기구는 <i>임산부, 노약자, 어린이</i>는 탑승할 수 없습니다. </p>
+        strong(b) - 중요한 텍스트  /  em(i) - 강조 텍스트 -> 똑같이 보여도 태그의 의미가 다름
+        <br>
+        
+        <ul>
+            <li>비순서형 목록 태그</li>
+            <li>ul 태그 내부에 li 태그 나열</li>
+            <li>li 태그 의미는 list item</li>
+            <li>css로 기호 변경 가능</li>
+        </ul>
+        <br>
+
+        <ol>
+            <li>ordered list 태그 ol</li>
+            <li>ol 태그 내부에 li 태그 나열</li>
+            <li>넘버링 되어 나열됨</li>
+            <li>ol 태그 속성으로 type="A"하면 ABC로 넘버링</li>
+            <li>type="I"하면 I, II, III 로 넘버링...</li>
+        </ol>
+        <br>
+        
+        <dl>
+            <dt>definition list - 정의형 목록 태그</dt>  
+            <dd>dt - definition title -> 용어 정의</dd>
+            <dd>dd - definition data -> 용어 설명 </dd>
+        </dl>
+
+        <dl>
+            <dt>라자냐</dt>
+            <dd>이탈리아 북부에서 유래한 파스타의 일종</dd>
+            <dt>필라프</dt>
+            <dd>쌀이나 으깬 밀과 같은 곡식으로 만드는 음식</dd>
+        </dl>
+        
+        <p id="one" style="margin-top: 1500px;">one</p>
+        <p id="two" style="margin-top: 1500px;">two</p>
+     
+    </body>
+</html>

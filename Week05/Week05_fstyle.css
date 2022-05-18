@@ -1,0 +1,66 @@
+/*
+color 참고 - https://material.io/resources/color/#!/?view.left=0&view.right=0
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+
+.container {
+    background:beige;
+    height: 100vh;      /*height 100% 쓰겠다!*/
+    display: flex;      /* FLEXBOX */
+    flex-direction: row; /*row: 왼->오 / row-reverse: 오->왼 / column: 위->아래 / column-reverse: 아래->위*/
+    flex-wrap: nowrap;      /*nowrap: 한줄에서 해결 / wrap: 다음줄로 넘어감 / wrap-reverse: 다음줄로 앞에서부터 내려감*/
+    /*flex-flow: column nowrap 으로 한 번에 해결 가능하기도 함*/
+
+    justify-content: flex-end;  
+    /*
+    아이템 위치 배치 main axis
+    row 기준! 
+    flex-start: 왼쪽 배치 / flex-end: 오른쪽 배치
+    center: 중간 배치 / space-around: 박스를 둘러싸서 space를 만들어줌
+    space-evenly: 모두 양옆 똑같은 간격
+    space-between: 왼오 여백X, 중간에만 각 박스가 여백을 가짐
+    */
+
+    align-items: center;
+    /*
+    아이템 위치 배치 cross axis (전체에서 보다는 아이템들끼리 배치되는 느낌)
+    baseline: 텍스트가 균일하게 보이도록 배치
+    */
+
+    align-content:center
+    /*
+    아이템 위치배치 cross axis (justify-content와 비슷)
+    */
+
+
+}   
+
+.item {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.item1 {
+    background: #ef9a9a;
+    flex-grow: 2;  /* 전체를 맞추려고 늘어남 숫자 배수/비율만큼 다른 것들과 비교되며 늘어남 (기본값 0)*/
+    flex-shrink: 2; /* 전체를 맞추려고 줄어듬 숫자 배수/비율만큼 다른 것들과 비교되며 줄어듬 (기본값 0)*/
+    flex-basis: auto;   /*flex-grow, shrink를 없애고 flex-basis:n% (합 100%)로 맞추면 %만큼 차지함 (기본값 auto)*/
+    
+    align-self: center;     /* item 하나만 위치 배치 가능 */
+    
+    /*order:2; 로 순서배치 가능*/
+}
+
+.item2 {
+    background: #ce93d8;
+    flex-grow: 1;   
+    flex-shrink: 1;
+}
+
+.item3 {
+    background: #90caf9;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
